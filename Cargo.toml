@@ -1,0 +1,12 @@
+[package]
+name = "tsify-phantomdata"
+edition = "2021"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+serde = { version = "1.0.216", features = ["derive"] }
+tsify-next = { version = "0.5.4", default-features = false, features = ["js"] }
+wasm-bindgen = "0.2.99"
